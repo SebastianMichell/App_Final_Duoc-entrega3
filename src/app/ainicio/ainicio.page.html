@@ -1,0 +1,36 @@
+
+<ion-header>
+  <ion-toolbar>
+    <img src="https://cdcolegiolosleonesquilpue.cl/wp-content/uploads/2019/04/duoc-uc.jpeg" />
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding" [fullscreen]="true">
+          <ion-item>
+            <ion-input [(ngModel)]="user.usuario" label="Nombre Usuario" labelPlacement="floating"
+              placeholder="Ingrese su Usuario"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="user.password" label="Contraseña" type="password" labelPlacement="floating"
+              placeholder="Ingrese su Contraseña">
+            </ion-input>
+          </ion-item>
+          <ion-checkbox>
+            <font size="4"> Recuerdame </font>
+          </ion-checkbox><br />
+          <ion-button (click)="enviarInformacion()" expand="full">Conectar</ion-button>
+          <br>
+          <ion-button id="present-alert" expand="full" (click)="acept()" [strong]="true">
+            Olvide mi contraseña
+          </ion-button><br>
+
+          <ion-button [routerLink]="['/inicios']"  expand="full">
+            salir 
+          </ion-button>
+          
+          <div>
+
+            <h1>{{mensaje}}</h1><br>
+          </div>
+</ion-content>

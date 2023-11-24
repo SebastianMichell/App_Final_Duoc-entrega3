@@ -1,0 +1,31 @@
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">registro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-header>
+    <ion-toolbar>
+      <img src="https://cdcolegiolosleonesquilpue.cl/wp-content/uploads/2019/04/duoc-uc.jpeg" />
+    </ion-toolbar>
+  </ion-header>
+<ion-content class="ion-padding" [fullscreen]="true">
+    <ion-item>
+      <ion-input [(ngModel)]="user.usuario" label="Nombre Usuario" labelPlacement="floating"
+        placeholder="Ingrese su Usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="user.password" label="Contraseña" type="password" labelPlacement="floating"
+        placeholder="Ingrese su Contraseña"></ion-input>
+    </ion-item>
+
+    <ion-button id="present-alert" expand="full" (click)="confirm()" [strong]="true">
+      Confirmar
+    </ion-button><br>
+
+    <ion-button [routerLink]="['/registro']"  expand="full">
+      salir 
+    </ion-button>
+    <h1>{{mensaje}}</h1><br>
+</ion-content>

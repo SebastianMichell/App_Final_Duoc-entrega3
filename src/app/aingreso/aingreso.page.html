@@ -1,0 +1,27 @@
+
+<ion-header>
+  <ion-toolbar>
+    <img src="https://cdcolegiolosleonesquilpue.cl/wp-content/uploads/2019/04/duoc-uc.jpeg" />
+  </ion-toolbar>
+</ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <div id="container">
+      <ion-avatar id="avatar" #avatar>
+        <img alt="Silhouette of a person's head"
+          src="https://i.pinimg.com/736x/19/40/ec/1940ec58e552b291fe05188f7bb78a7b.jpg" />
+      </ion-avatar>
+      <br>
+      <h1 id="titulo">
+        Bienvenido!
+      </h1>
+      <ion-label>
+        <p>Usuario: {{ user.usuario }}</p>
+      </ion-label><br><br>
+            <ion-button  expand="full" [routerLink]="['/escanearqr']">
+              Escanear QR
+             </ion-button>
+    </div>
+    
+    
+  </ion-content>
